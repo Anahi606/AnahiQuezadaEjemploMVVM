@@ -18,6 +18,8 @@ namespace AnahiQuezadaEjemploMVVM.ViewModels
             set { _libro = value;
                 onPropertyChanged(nameof(Libro));}
         }
+        public List<Libro> Libros { get; set; }
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void onPropertyChanged(string propertyName)
         {
